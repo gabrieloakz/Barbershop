@@ -78,8 +78,27 @@ nav a {
 
 .content {
     padding: 20px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    
 }
+
+.banner img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Se .benefits está no contêiner */
+.benefits img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: none;
+    max-width: 50px;
+}
+
 
 .footer {
     background-color: #333;
@@ -99,4 +118,40 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-right: 10px; /* Adiciona espaçamento à direita entre as .box */
+}
+
+.box:last-child {
+    margin-right: 0; /* Remove o espaçamento da última .box para evitar excesso */
+}
+
+img {
+    border-radius: 8px; /* Leve arredondamento nos cantos da imagem */
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
 }
