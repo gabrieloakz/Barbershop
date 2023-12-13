@@ -33,14 +33,14 @@ body {
 
 /* Estilos para telas maiores que 600 pixels */
 @media screen and (min-width: 600px) {
-    .header, .content, .footer {
+    .header, .content, .footer .benefits {
         padding: 20px;
     }
 }
 
 /* Estilos para telas menores que 600 pixels */
 @media screen and (max-width: 600px) {
-    .header, .content, .footer {
+    .header, .content, .footer .benefits {
         padding: 10px;
     }
 }
@@ -90,13 +90,17 @@ nav a {
     align-items: center;
 }
 
+.benefits {
+    max-width: 400px;
+}
+
 /* Se .benefits está no contêiner */
 .benefits img {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: none;
-    max-width: 50px;
+    
 }
 
 
@@ -154,4 +158,42 @@ h3 {
 
 p {
     margin-top: 10px;
+}
+
+#novidades{
+    margin-top: 20px;
+}
+
+/* Adicione ao seu arquivo CSS */
+.enviar-btn {
+    background-color: orange; /* Cor de fundo laranja */
+    margin-top: 10px;
+    color: white; /* Texto em branco */
+    font-size: 1.2em; /* Tamanho da fonte um pouco maior */
+    padding: 10px 20px; /* Preenchimento interno */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Adiciona cursor de mão ao passar o mouse */
+    border-radius: 5px; /* Cantos levemente arredondados */
+}
+
+/* Altera a cor do botão quando o mouse passa por cima */
+.enviar-btn:hover {
+    background-color: darkorange; /* Cor de fundo laranja mais escura */
+}
+
+
+.tabela-container table {
+    border-collapse: collapse; /* Combinação de bordas de células para uma aparência mais nítida */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tabela-container th, .tabela-container td {
+    border: 1px solid #ddd; /* Adiciona borda de 1px sólida com cor cinza (#ddd) */
+    padding: 8px; /* Adiciona algum espaço interno para melhorar a aparência */
+    text-align: left; /* Alinha o texto à esquerda nas células */
+}
+
+.tabela-container th {
+    background-color: #f2f2f2; /* Adiciona uma cor de fundo mais clara para os cabeçalhos */
 }

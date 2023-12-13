@@ -1,3 +1,5 @@
+//Animação de fade-in do site
+
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         document.querySelector('.container').classList.remove('hidden');
@@ -6,3 +8,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.footer').classList.remove('hidden');
     }, 500);
 });
+
+//Validação de formulário e rede
