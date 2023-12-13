@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+  </head>
+
+  <body>
+    <div class="container hidden">
+      <header class="header hidden">
+        <img id="logo" src="../Images/logo.png" alt="Logo da barbearia" />
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="Produtos.html">Produtos</a>
+          <a href="Contato.html">Contatos</a>
+        </nav>
+      </header>
+
+      <main class="content hidden">
+        <div class="form-container">
+          <div class="form-section">
+            <h2>Nome e Sobrenome</h2>
+            <input type="text" placeholder="Digite seu nome completo" />
+          </div>
+
+          <div class="form-section">
+            <h2>Email</h2>
+            <input
+              type="email"
+              placeholder="exemplo@email.com"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Por favor, insira um endereço de email válido no formato exemplo@email.com"
+            />
+          </div>
+
+          <div class="form-section">
+            <h2>Telefone</h2>
+            <input
+              type="tel"
+              placeholder="(xx) xxxxx-xxxx"
+              pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+              title="Insira um número de telefone válido (xx) xxxxx-xxxx"
+            />
+          </div>
+
+          <div class="form-section">
+            <h2>Mensagem</h2>
+            <textarea placeholder="Digite sua mensagem"></textarea>
+          </div>
+
+          <div class="form-section">
+            <h2>Como prefere o nosso contato?</h2>
+            <input type="radio" name="preferencia-contato" value="email" />
+            Email
+            <input type="radio" name="preferencia-contato" value="telefone" />
+            Telefone
+            <input type="radio" name="preferencia-contato" value="whatsapp" />
+            Whatsapp
+          </div>
+
+          <div class="form-section">
+            <h2>Qual horário prefere ser atendido?</h2>
+            <select>
+              <option value="manha">Manhã</option>
+              <option value="tarde">Tarde</option>
+              <option value="noite">Noite</option>
+            </select>
+          </div>
+
+          <div class="form-section">
+            <input type="checkbox" id="novidades" name="novidades" />
+            <label for="novidades"
+              >Gostaria de receber nossas novidades por e-mail?</label
+            >
+          </div>
+
+          <div class="form-section">
+            <button type="button" class="enviar-btn" id="enviarBotao">
+              Enviar Formulário
+            </button>
+          </div>
+
+          <script src="../JS/main.js"></script>
+
+          <div class="tabela-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dia</th>
+                  <th>Horário</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Segunda</td>
+                  <td rowspan="3">8-20h</td>
+                </tr>
+                <tr>
+                  <td>Quarta</td>
+                </tr>
+                <tr>
+                  <td>Sexta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer hidden">
+        <img
+          src="../Images/logo-branco.png"
+          alt="Logo do rodapé em cor branca"
+        />
+        <p>© Copyright Barbearia Alura - 2023</p>
+      </footer>
+    </div>
+
+    <script src="../JS/main.js"></script>
+  </body>
+</html>
