@@ -142,6 +142,15 @@ main {
     margin-right: 0; /* Remove o espaçamento da última .box para evitar excesso */
 }
 
+box {
+  /* Outros estilos para a box */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.box:hover {
+  transform: scale(1.1); /* Aumenta a escala em 10% quando o mouse passa sobre a box */
+}
+
 img {
     border-radius: 8px; /* Leve arredondamento nos cantos da imagem */
     margin-top: 10px;
